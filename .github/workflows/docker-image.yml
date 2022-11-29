@@ -16,6 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: webhook
       run: docker build . --file knative/webhook/Dockerfile --tag webhook:1.0.0 
-    - uses: docker/build-push-action@v3
     - name: push image
       run: docker tag webhook:1.0.0 registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0 && docker push registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0
