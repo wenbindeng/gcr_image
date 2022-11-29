@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: autoscaler
-      run: docker build . --file autoscaler/Dockerfile --tag autoscaller:1.0.0
+      run: docker build . --file knative/autoscaler/Dockerfile --tag autoscaller:1.0.0
