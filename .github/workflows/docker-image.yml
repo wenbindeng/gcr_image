@@ -17,4 +17,4 @@ jobs:
     - name: webhook
       run: docker build . --file knative/webhook/Dockerfile --tag webhook:1.0.0 
     - name: push image
-      run: docker tag webhook:1.0.0 registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0 && docker login registry.cn-hangzhou.aliyuncs.com --username=code_night --pasword=$PASSWORD && docker push registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0
+      run: docker tag webhook:1.0.0 registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0 && docker login registry.cn-hangzhou.aliyuncs.com --username=code_night --password=$PASSWORD && docker push registry.cn-hangzhou.aliyuncs.com/code_night/knative-webhook:1.0.0
