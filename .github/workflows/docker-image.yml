@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: autoscaler
-      run: docker build . --file knative/autoscaler/Dockerfile --tag autoscaller:1.0.0
+    - name: webhook
+      run: docker build . --file knative/webhook/Dockerfile --tag autoscaller:1.0.0
