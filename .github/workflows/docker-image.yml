@@ -30,4 +30,4 @@ jobs:
     - name: build event-webhook
       run: docker build . --file knative/event-webhook/Dockerfile --tag knative-event-webhook:1.0.0 
     - name: push event-webhook image
-      run: docker tag webhook:1.0.0 registry.cn-hangzhou.aliyuncs.com/code_night/knative-event-controller:1.0.0 && docker push registry.cn-hangzhou.aliyuncs.com/code_night/knative-event-webhook:1.0.0
+      run: docker tag knative-event-webhook:1.0.0 registry.cn-hangzhou.aliyuncs.com/code_night/knative-event-webhook:1.0.0 && docker push registry.cn-hangzhou.aliyuncs.com/code_night/knative-event-webhook:1.0.0
